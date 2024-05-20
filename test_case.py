@@ -28,7 +28,7 @@ class TestGraduation(unittest.TestCase):
         result = graduation_obj.graduation_ceremony(0)
         self.assertEqual(result, error_message) 
 
-        result = graduation_obj.graduation_ceremony(3.5)
+        result = graduation_obj.graduation_ceremony(3.7)
         self.assertEqual(result, error_message)  
 
         result = graduation_obj.graduation_ceremony("AABD")
@@ -43,3 +43,4 @@ class TestGraduation(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+#ram_shyam    
