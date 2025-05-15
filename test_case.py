@@ -23,6 +23,9 @@ class TestGraduation(unittest.TestCase):
         error_message = "number of days can not be less than 1 or fraction."
 
         result = graduation_obj.graduation_ceremony(-1)
+        self.assertEqual(result, error_message)
+
+        result = graduation_obj.graduation_ceremony(-5)
         self.assertEqual(result, error_message)  
 
         result = graduation_obj.graduation_ceremony(0)
